@@ -24,11 +24,26 @@ export const  NavbarContainer = styled(Container)`
 
   ${Container}
 `
-export const  NavLogo = styled(Link)
+export const  NavLogo = styled(Link)`
+  color:#fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  z-index: 50;
+`
+
 export const  NavIcon = styled.img`
-  
+  margin-right: 1rem;
+  width: 3rem;
 `
 export const  MobileIcon = styled.div`
+  display: none;
+  z-index: 50;
+
+  /* @media screen and (max-wi) */
 `
 export const  NavMenu = styled.ul`
   
