@@ -13,13 +13,13 @@ import {
   NavLinks,
   NavItem,
 } from "./NavbarStyle";
-import { useLocation, useHistory } from "react-router-dom";
+import {  useLocation, useNavigate } from "react-router-dom";
 import { data } from "../../data/NavbarData";
 
 function Navbar() {
   const [show, setShow] = useState(false);
 
-  let history = useHistory();
+  let navigate = useNavigate();
   let location = useLocation();
 
   function handleClick() {
@@ -37,7 +37,8 @@ function Navbar() {
   function closeMobileMenu(to, id) {
     if (id && location.pathname === "/") scrollTo(id);
 
-    history.push(to);
+    // console.log(navigate);
+    navigate(to);
     setShow(false);
   }
 
