@@ -79,4 +79,4 @@ function NavList({ el, onClick }) {
 }
 
 export default Navbar;
-// ///
+// //
