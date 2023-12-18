@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
-import { Button, Container, MainHeading } from "../../GlobalStyles";
+import { Button, MainHeading } from "../../GlobalStyles";
 import {
   HeroVideo,
   HeroSection,
   HeroText,
   ButtonWrapper,
   HeroButton,
+  HeroContainer
 } from "./HeroStyle";
 
 function Hero() {
   return (
     <HeroSection>
-      <HeroVideo src="../../../public/assets/hero.mp4" autoPlay muted/>
-      <Container>
-        <MainHeading>Your data is secure with us</MainHeading>
+      <HeroVideo src="../../../public/assets/hero.mp4" autoPlay loop muted/>
+      <HeroContainer>
+        <MainHeading>Your data is secured with us</MainHeading>
 
         <HeroText>
           We provide the best security systems for clients all over the world
@@ -21,11 +22,11 @@ function Hero() {
 
         <ButtonWrapper>
           <Link to="signup">
-            <Button>Get Started</Button>
+            <HeroButton>Get Started</HeroButton>
           </Link>
-          <HeroButton>Find More</HeroButton>
+          <Button>Find More</Button>
         </ButtonWrapper>
-      </Container>
+      </HeroContainer>
     </HeroSection>
   );
 }
