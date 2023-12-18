@@ -1,6 +1,6 @@
 // Hero Feature Context Carousel
 
-import { Hero } from "../Components"
+import { Hero, Navbar } from "../Components"
 
 
 
@@ -8,6 +8,7 @@ function Home() {
   return (
     <div>
       <Hero/>
+      <Navbar/>
     </div>
   )
 }
