@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../../GlobalStyles";
+import { Container } from "../../GlobalStyles";
 
 export const HeroSection = styled.section`
   height: 100vh;
@@ -8,6 +9,7 @@ export const HeroSection = styled.section`
   padding-top: clamp(70px, 25vh, 220px);
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
   object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.7);
 `;
 
 export const HeroVideo = styled.video`
@@ -18,6 +20,18 @@ export const HeroVideo = styled.video`
   top: 0;
   position: absolute;
   z-index: -1;
+  /* background: black; */
+  /* opacity: 0.8; */
+`;
+
+export const HeroContainer = styled(Container)`
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+
+  ${Container}
 `;
 
 export const HeroText = styled.p`
@@ -27,6 +41,8 @@ export const HeroText = styled.p`
   text-align: center;
   letter-spacing: 2px;
   color: #fff;
+  opacity: 1;
+  font-weight: bold;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -37,19 +53,24 @@ export const ButtonWrapper = styled.div`
   gap: 0.5rem;
 `;
 
-export const HeroButton = styled(Button)`
-  color: black;
-
-  &:before {
-    background: #fff;
-    height: 500%;
-  }
-
-  &:hover:before {
-    height: 0%;
-  }
+export const HeroButton = styled.button`
+  color: #fff;
+  transition: 200ms ease-in-out;
+  background: rgb(251, 192, 0);
+  border: solid rgb(251, 192, 0);
+  border-radius: 4px;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
 
   &:hover {
-    color: #fff;
+    color: white;
+    background: orange;
+    border: solid orange;
   }
+
+  /* ${Button} */
 `;
