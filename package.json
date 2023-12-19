@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "framer-motion": "^10.16.16",
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.3",
