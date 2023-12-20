@@ -65,6 +65,7 @@ function Content({
                 initial={initial}
                 animate={animation}
                 transition={{ delay: 0.7, duration: 0.6 }}
+                inverse={inverse}
               >
                 {description}
               </Subtitle>
