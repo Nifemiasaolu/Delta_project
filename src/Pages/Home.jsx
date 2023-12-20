@@ -1,6 +1,7 @@
 // Hero Feature Context Carousel
 
 import { Content, Features, Hero } from "../Components"
+import { heroOne, heroTwo ,heroThree } from "../data/HeroData" 
 
 
 
@@ -9,7 +10,9 @@ function Home() {
     <div>
       <Hero/>
       <Features />
-      <Content/>
+      <Content {...heroOne}/>
+      <Content {...heroTwo}/>
+      <Content {...heroThree}/>
    
     </div>
   )
