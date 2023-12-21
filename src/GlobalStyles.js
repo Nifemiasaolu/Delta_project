@@ -36,7 +36,7 @@ export const Heading = styled.h2`
   margin: ${({ margin }) => (margin ? margin : "")};
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
-  color: ${({ inverse }) => (inverse ? "#403ae3" : "#fff")};
+  color: ${({ inverse }) => (inverse ? "$403ae3" : "#fff")};
   letter-spacing: 0.4rem;
   line-height: 1.06;
   text-align: center;
