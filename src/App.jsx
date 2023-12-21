@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GlobalStyle from "./GlobalStyles";
 import { Home, Pricing, Signup } from "./Pages";
-import { Navbar } from "./Components";
+import { Footer, Navbar } from "./Components";
 
 function App() {
   return (
@@ -10,14 +10,14 @@ function App() {
       <GlobalStyle />
 
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
-
     </>
   );
 }
