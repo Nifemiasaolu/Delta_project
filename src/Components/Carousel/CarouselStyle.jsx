@@ -10,7 +10,7 @@ export const CarouselImage = styled.img`
   vertical-align: middle;
 `;
 export const ImageWrapper = styled.div`
-  width: 90%;
+  /* width: 90%; */
   display: flex !important;
   justify-content: center;
   flex-direction: column;
@@ -25,6 +25,11 @@ export const ImageWrapper = styled.div`
 `;
 
 export const ButtonContainer = styled(Row)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+
   &svg {
     margin: 0 1rem;
     cursor: pointer;
@@ -42,6 +47,7 @@ export const ButtonContainer = styled(Row)`
 
 export const ReviewSlider = styled(Slider)`
   width: 100%;
+  overflow: hidden;
 
   .slick-track {
     display: flex;
