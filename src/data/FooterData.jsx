@@ -44,3 +44,5 @@ export const footerData = [
 		links: ['GDPR', 'Privacy Policy', 'Terms of Service', 'Disclaimer'],
 	},
 ];
+
+// ///
