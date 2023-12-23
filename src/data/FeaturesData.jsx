@@ -6,46 +6,46 @@ import { AiOutlineCloudUpload } from "react-icons/ai";
 import { GrHostMaintenance } from "react-icons/gr";
 import { BiSupport, BiDollar } from "react-icons/bi";
 
-// const iconStyle = (Icon) => <Icon size="3rem" color="#0f0f0f" />;
+const iconStyle = (Icon) => <Icon size="3rem" color="#0f0f0f" />;
 
 export const featuresData = [
   {
     name: "Best Security",
     description:
       "We offer the best data security to our clients, which makes us stand out",
-    icon: <BsFillShieldLockFill />,
+    icon: iconStyle(BsFillShieldLockFill),
     imgClass: "one",
   },
   {
     name: "Ease of Use",
     description: "Our system is easy to use and integrate",
-    icon: <IoIosOptions />,
+    icon: iconStyle(IoIosOptions),
     imgClass: "two",
   },
   {
     name: "Maintenance",
     description:
       "Our code is written in highest standards, which makes it highly sustainable",
-    icon: <GrHostMaintenance />,
+    icon: iconStyle(GrHostMaintenance),
     imgClass: "three",
   },
   {
     name: "24/7 Support",
     description: "Our team is available at all times in case you need us",
-    icon: <BiSupport />,
+    icon: iconStyle(BiSupport),
     imgClass: "four",
   },
   {
     name: "Price",
     description: "We offer the highest value/cost ratio",
-    icon: <BiDollar />,
+    icon: iconStyle(BiDollar),
     imgClass: "five",
   },
   {
     name: "Scalable",
     description:
       "Our servers are located all over the world, therefore improving scalability and speed ",
-    icon: <AiOutlineCloudUpload />,
+    icon: iconStyle(AiOutlineCloudUpload),
     imgClass: "six",
   },
 ];
