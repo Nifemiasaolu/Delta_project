@@ -89,12 +89,12 @@ export const FormInput = styled.input`
   width: 100%;
   border: none;
   border-bottom: 1px solid #cfcfcf;
-  font-size: 1rem;
+  font-size: 0.8;
 `;
 
 export const FormLabel = styled.label`
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.3rem;
   color: #afafaf;
 `;
@@ -112,8 +112,7 @@ export const FormImg = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
-
-`
+`;
 
 export const FormButton = styled.button`
   border-radius: 4px;
@@ -123,17 +122,17 @@ export const FormButton = styled.button`
   /* color: #fff; */
   outline: none;
   width: 100%;
-  font-size: 1.4rem;
-  padding: 5px 15px;
+  font-size: 1rem;
+  padding: 8px 15px;
   border: 2px solid black;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 
-  &:hover{
+  &:hover {
     color: white;
     transition: background-color 0.4s ease-in;
     background-color: black;
   }
-`
+`;
 // /
