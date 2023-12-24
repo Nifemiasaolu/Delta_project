@@ -54,7 +54,7 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const HeroButton = styled.button`
-  color: #fff;
+  color: black;
   transition: 200ms ease-in-out;
   background: rgb(251, 192, 0);
   border: solid rgb(251, 192, 0);
