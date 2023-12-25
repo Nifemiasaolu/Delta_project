@@ -3,6 +3,7 @@ import { IconContext } from "react-icons";
 import { data, sliderSettings } from "../../data/CarouselData";
 import { Row, Heading, Section, TextWrapper } from "../../GlobalStyles";
 import {
+  CarouselSection,
   CarouselImage,
   ImageWrapper,
   ButtonContainer,
@@ -15,7 +16,7 @@ function Carousel() {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
+    <Section margin="auto" maxWidth="1280px" padding="50px 70px" smpadding="0 0 70px" inverse>
       <Row>
         <Heading inverse>
           Find More About Us
