@@ -47,7 +47,7 @@ function Navbar() {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <NavIcon src="../../../public/assets/logo.png" />
+            <NavIcon src="./assets/logo.png" />
             Delta
           </NavLogo>
 
