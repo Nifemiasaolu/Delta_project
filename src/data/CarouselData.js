@@ -4,7 +4,6 @@ export const data = [
 		description:
 			'Our clients happily stay with our services for more several years now. See real reviews from our clients.',
 		image: './assets/clients.jpg',
-		
 	},
 	{
 		title: 'Our security ',
