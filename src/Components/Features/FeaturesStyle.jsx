@@ -3,10 +3,14 @@ import { motion } from "framer-motion";
 
 export const FeatureTitle = styled.h2`
   text-align: center;
-  font-size: clamp(1.3rem, 13vw, 3.1rem);
+  font-size: clamp(1.3rem, 8vw, 3rem);
   line-height: 1.06;
   letter-spacing: 0.4rem;
   margin: auto;
+
+  @media screen and (max-width: 778px) {
+    font-size: clamp(1.3rem, 7vw, 3rem);
+  }
 `;
 
 export const FeatureTextWrapper = styled.div`
