@@ -12,7 +12,7 @@ import {
 function Hero() {
   return (
     <HeroSection>
-      <HeroVideo src="../../../public/assets/hero.mp4" autoPlay loop muted/>
+      <HeroVideo src="./assets/hero.mp4" autoPlay loop muted/>
       <HeroContainer>
         <MainHeading>Your data is secured with us</MainHeading>
 
