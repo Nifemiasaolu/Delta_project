@@ -24,15 +24,21 @@ export const Container = styled.div`
 
 export const MainHeading = styled.h1`
   font-size: clamp(2.3rem, 6vw, 4.5rem);
+  /* font-size: clamp(1.3rem, 13vw, 3.1rem); */
+
   margin-bottom: 2rem;
   color: ${({ inverse }) => (inverse ? "#403ae3" : "#fff")};
   width: 100%;
   letter-spacing: 4px;
   text-align: center;
+
+  @media screen and (max-width: 990px) {
+    font-size: clamp(1.3rem, 10vw, 3.1rem);
+  }
 `;
 
 export const Heading = styled.h2`
-  font-size: clamp(1.3rem, 13vw, 3.1rem);
+  font-size: clamp(1.3rem, 8vw, 3.1rem);
   margin: ${({ margin }) => (margin ? margin : "")};
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
@@ -41,6 +47,10 @@ export const Heading = styled.h2`
   line-height: 1.06;
   text-align: center;
   width: ${({ width }) => (width ? width : "100%")};
+
+   @media screen and (max-width: 778px) {
+    font-size: clamp(1.3rem, 7vw, 3rem);
+  }
 `;
 
 export const TextWrapper = styled.span`
