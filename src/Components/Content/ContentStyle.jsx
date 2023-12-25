@@ -33,7 +33,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
 
-  @media screen and (max-width: 768) {
+  @media screen and (max-width: 768px) {
     padding-bottom: 65px;
     > h1,
     p {
@@ -69,12 +69,16 @@ export const Img = styled(motion.img)`
   z-index: 1;
 `;
 export const TopLine = styled(motion.div)`
-  font-size: 0%.9rem;
+  font-size: 0.8rem;
   line-height: 16px;
   font-weight: 550;
   letter-spacing: 1.4px;
   margin-bottom: 1.3rem;
   color: #979797;
+
+  /* @media screen and (max-width: 768px) {
+    text-align: center;
+  } */
 `;
 
 export const Heading = styled(motion.h2)`
@@ -86,16 +90,20 @@ export const Heading = styled(motion.h2)`
 
   @media screen and (max-width: 768px) {
     text-align: center;
+    font-size: clamp(1.3rem, 6vw, 3rem);
   }
 `;
 
-export const Subtitle = styled(motion.p) `
+export const Subtitle = styled(motion.p)`
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
-	color: ${({ inverse }) => (inverse ? '#6a6a6a' : 'white')};
-  
-`
+  color: ${({ inverse }) => (inverse ? "#6a6a6a" : "white")};
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`;
 
 export const ContentButton = styled(motion.button)`
   height: 3rem;
@@ -107,21 +115,25 @@ export const ContentButton = styled(motion.button)`
   text-transform: uppercase;
   cursor: pointer;
   background: none;
-	color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-  
+  color: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
+
   border-radius: 4px;
   white-space: nowrap;
-  padding: ${({big})=> big ? '12px 64px' : '10px 20px'};
-  font-size: ${({fontBig})=> fontBig ? '20px' : '16px'};
+  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
-	border: 2px solid ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
+  border: 2px solid ${({ inverse }) => (inverse ? "#0c4577" : "white")};
   cursor: pointer;
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 
   &::before {
-		background: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-    content: '';
+    background: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,16 +141,16 @@ export const ContentButton = styled(motion.button)`
     z-index: -1;
     transition: all 0.6s ease;
     width: 100%;
-    height:0%;
+    height: 0%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
 
-  &:hover:before{
+  &:hover:before {
     height: 500%;
   }
 
-  &:hover{
-    color: ${({inverse})=> inverse? 'white' : 'black'};
+  &:hover {
+    color: ${({ inverse }) => (inverse ? "white" : "black")};
   }
 
-`
+`;
