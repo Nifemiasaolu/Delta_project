@@ -3,7 +3,6 @@ import { IconContext } from "react-icons";
 import { data, sliderSettings } from "../../data/CarouselData";
 import { Row, Heading, Section, TextWrapper } from "../../GlobalStyles";
 import {
-  CarouselSection,
   CarouselImage,
   ImageWrapper,
   ButtonContainer,
