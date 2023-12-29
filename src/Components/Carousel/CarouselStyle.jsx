@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Row, Section } from "../../GlobalStyles";
 import Slider from "react-slick";
 
-export const CarouselSection= styled(Section)`
+export const CarouselSection = styled(Section)`
   margin: auto;
   max-width: 1280px;
   padding: 50px 70px;
@@ -13,7 +13,7 @@ export const CarouselSection= styled(Section)`
   }
 
   ${Section};
-` 
+`;
 
 export const CarouselImage = styled.img`
   width: 100%;
@@ -98,4 +98,4 @@ export const CardButton = styled.button`
   }
 `;
 
-// 
+// ///
