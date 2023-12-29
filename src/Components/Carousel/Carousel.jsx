@@ -59,3 +59,5 @@ function SliderList({ el }) {
     </ImageWrapper>
   );
 }
+
+// ///
