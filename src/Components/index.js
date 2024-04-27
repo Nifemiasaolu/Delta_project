@@ -8,4 +8,4 @@ import Navbar from "./Navbar/Navbar";
 import Pricing from "./Pricing/Pricing";
 
 export { Carousel, Content, Features, Footer, Form, Hero, Navbar, Pricing };
-// //////
+// /////
